@@ -38,7 +38,22 @@
     .muted{ color:#666; }
     footer{ margin-top: 34px; color:#666; font-size:14px; }
   </style>
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;
+    max-width: 920px;
+    margin: 48px auto;
+    padding: 0 18px;
+    line-height: 1.75;
+    color:#111;
+  }
+
   ul { list-style: none; padding-left: 0; }
+
+  header{ margin-bottom: 28px; }
+  h1{ margin: 0 0 6px 0; }
+  .subtitle{ color:#444; margin:0; }
+</style>
+
 
 </head>
 <body>
@@ -71,20 +86,42 @@
     <li> NGINX 서버 구성 및 HTML 변경 </li>
     <li> Load Balancer 신규 구성 </li>
     <li> kr1/kr2 부하 분산 영상 업로드 </li>
-    <li> </li>
+    <video width="700" controls>
+  <source src="assets/부하 분산 영상.mp4" type="video/mp4">
+  브라우저가 영상을 지원하지 않습니다.
+</video>
     
   </ul>
 
   <h3>2) PaaS DB 미니 프로젝트 </h3>
   <ul>
-    <li> CDB for Postgresql 백업 파일로 서버 추가 설치 → app.py def con 부분 수정 →
+    <li> CDB for Postgresql 백업 파일로 서버 추가 설치 →
+         app.py def con 부분 수정 →
     백그라운드 실행하고 nohup python3 app.py & > app.log </li>
+    <img 
+  src="PaaS DB.png" 
+  width="700"
+  alt="PaaS DB 실습 화면"
+>
+
   </ul>
 
   <h3>3) Cloud Native & NCloud Kubernetes </h3>
   <ul>
-    <li> Auto Scaler 수행하기 → kubectl get pods 명령어로 파드 상태 스크린샷 1개</li>
-    <li> 콘솔 → Server에서 추가 node 생성되는 서버 리스트 스크린샷 1개 </li>
+    <li> Auto Scaler 수행하기 → kubectl get pods 명령어로 파드 상태 확인</li>
+    <li> 콘솔 → Server에서 추가 node 생성되는 서버 리스트 확인</li>
+    <img 
+  src="assets/Kubernetes.png" 
+  width="700"
+  alt="파드 상태"
+>
+    <img 
+  src="assets/추가 node.png" 
+  width="700"
+  alt="Server에서 추가 node 생성되는 서버 리스트"
+>
+
+
   </ul>
 
   <h3>4) Docker Swarm 실습 </h3>
@@ -93,13 +130,18 @@
     <li> 2. ACG inbound / Outbound VPC 모두 오픈 </li>
     <li> 3. Docker 3번 실습/ 2개 서버에서 모두 수행 </li>
     <li> 4. Docker swarm 클러스터 JOIN </li>
+    <img 
+  src="Docker Swarm.png" 
+  width="700"
+  alt="Docker Swarm 실습 화면"
+>
+
   </ul>
 
   </ul>
 </section>
 
 <footer>
-  <p>📝 다음 업데이트 예정: 실습 스크린샷 / 미니프로젝트 요약 / 사용 기술 스택 / 회고</p>
 </footer>
 
 </body>
