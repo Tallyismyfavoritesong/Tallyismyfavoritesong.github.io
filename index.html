@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NCA 클라우드 학습 기록 | Kwak Min Seo</title>
+  <title>NCA 클라우드 실습 기록 | Kwak Min Seo</title>
   <style>
     body{
       font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;
@@ -44,7 +44,7 @@
 
 <header>
   <h1>Kwak Min Seo</h1>
-  <p class="subtitle">NCA 학습 기록 (Cloud) — 필요할 때 계속 업데이트 예정</p>
+  <p class="subtitle">NCA 실습 기록 (Cloud)</p>
   <div>
     <span class="tag">Cloud</span>
     <span class="tag">Monitoring</span>
@@ -59,48 +59,48 @@
 </header>
 
 <section class="card">
-  <h2>NCA 클라우드 커리큘럼 정리</h2>
+  <h2>NCA 클라우드 실습 내용 정리</h2>
   <p class="muted">
     아래 항목들은 수강/실습한 내용 기준으로 정리했습니다.
   </p>
 
   <h3>1) 클라우드 모니터링 및 Auto Scale + Load Balancer </h3>
   <ul>
-    <li>(실습) Zone 이중화 로드 밸런서 구성</li>
-    <li> NGINX 서버 구성 및 HTML 변경 </li>
-    <li> Load Balancer 신규 구성 </li>
-    <li> kr1/kr2 부하 분산 만들기 </li>
+    <li> Zone 이중화 로드 밸런서 구성</li>
+    <li> 1) NGINX 서버 구성 및 HTML 변경 </li>
+    <li> 2) Load Balancer 신규 구성 </li>
+    <li> 3) kr1/kr2 부하 분산 만들기 </li>
     <video width="700" controls>
-  <source src="assets/부하 분산 영상.mp4" type="video/mp4">
-  브라우저가 영상을 지원하지 않습니다.
+  <source src="부하 분산 영상.mp4" type="video/mp4">
 </video>
     
   </ul>
 
   <h3>2) PaaS DB 미니 프로젝트 </h3>
   <ul>
-    <li> CDB for Postgresql 백업 파일로 서버 추가 설치 →
-         app.py def con 부분 수정 →
-    백그라운드 실행하고 nohup python3 app.py & > app.log </li>
+    <li> 1) CDB for Postgresql 백업 파일로 서버 추가 설치 
+         2) app.py def con 부분 수정 
+         3) 백그라운드 실행하고 nohup python3 app.py & > app.log </li>
     <img 
   src="PaaS DB.png" 
   width="700"
-  alt="PaaS DB 실습 화면"
+  alt="PaaS DB 실습 최종 화면"
 >
 
   </ul>
 
   <h3>3) Cloud Native & NCloud Kubernetes </h3>
   <ul>
-    <li> Auto Scaler 수행하기 → kubectl get pods 명령어로 파드 상태 확인</li>
-    <li> 콘솔 → Server에서 추가 node 생성되는 서버 리스트 확인</li>
+    <li> 1) Auto Scaler 수행하기 
+         2) kubectl get pods 명령어로 파드 상태 확인</li>
+    <li> 3) 콘솔 → Server에서 추가 node 생성되는 서버 리스트 확인</li>
     <img 
-  src="assets/Kubernetes.png" 
+  src="Kubernetes.png" 
   width="700"
   alt="파드 상태"
 >
     <img 
-  src="assets/추가 node.png" 
+  src="추가 node.png" 
   width="700"
   alt="Server에서 추가 node 생성되는 서버 리스트"
 >
@@ -110,14 +110,14 @@
 
   <h3>4) Docker Swarm 실습 </h3>
   <ul>
-    <li> 1. docker-swarm-001 (리더노드), docker-swarm-002 (워커노드) </li>
-    <li> 2. ACG inbound / Outbound VPC 모두 오픈 </li>
-    <li> 3. Docker 3번 실습/ 2개 서버에서 모두 수행 </li>
-    <li> 4. Docker swarm 클러스터 JOIN </li>
+    <li> 1)  docker-swarm-001 (리더노드), docker-swarm-002 (워커노드) </li>
+    <li> 2) ACG inbound / Outbound VPC 모두 오픈 </li>
+    <li> 3) Docker 3번 실습/ 2개 서버에서 모두 수행 </li>
+    <li> 4) Docker swarm 클러스터 JOIN </li>
     <img 
   src="Docker Swarm.png" 
   width="700"
-  alt="Docker Swarm 실습 화면"
+  alt="Docker Swarm 실습 최종 화면"
 >
 
   </ul>
